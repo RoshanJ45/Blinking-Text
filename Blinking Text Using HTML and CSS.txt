@@ -1,0 +1,34 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            color: #00ff99;
+        }
+        .neon-sign {
+            font-size: 72px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+            animation: flicker 1.5s infinite;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99; }
+            50% { opacity: 0.8; text-shadow: none; }
+            60% { opacity: 1; text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99; }
+            70% { opacity: 0.5; text-shadow: none; }
+            80% { opacity: 1; text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99; }
+            100% { opacity: 1; text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99; }
+        }
+    </style>
+</head>
+<body>
+    <div class="neon-sign">OPEN</div>
+</body>
+</html>
